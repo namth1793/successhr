@@ -34,10 +34,9 @@ export default function Hero() {
         className="absolute inset-0 transition-transform duration-75 ease-out"
         style={{ transform: `translate(${offset.x * -18}px, ${offset.y * -18}px) scale(1.05)` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-primary-800" />
-        <div className="absolute inset-0 opacity-15"
-          style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80")', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-        <div className="absolute inset-0 bg-navy-900/65" />
+        <div className="absolute inset-0"
+          style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80")', backgroundSize: 'cover', backgroundPosition: 'center top' }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/70 to-navy-900/40" />
       </div>
 
       {/* Decorative blobs — move most */}
