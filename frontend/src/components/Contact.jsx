@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios from 'axios';
+import api from '../api';
 import { IconPhone, IconEnvelope, IconGlobe, IconCheckCircle, IconXCircle, IconPaperAirplane, IconBolt, IconMapPin } from './Icons';
 
 const services = [
@@ -28,7 +28,7 @@ export default function Contact() {
     if (!form.name || !form.phone) return;
     setStatus('loading');
     try {
-      await axios.post('/api/contacts', form);
+      await api.post('/api/contacts', form);
       setStatus('success');
       setForm({ name: '', company: '', phone: '', email: '', service: '', message: '' });
     } catch {
