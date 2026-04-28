@@ -22,14 +22,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid md:grid-cols-3 gap-10 mb-10">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-primary-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S</span>
-              </div>
-              <div>
-                <div className="text-white font-bold text-xl">Success<span className="text-primary-400">HR</span></div>
-                <div className="text-gray-400 text-xs">Nguồn Nhân Lực Success</div>
-              </div>
+            <div className="mb-5">
+              <img src="/logo.png" alt="SuccessHR" className="h-12 w-auto brightness-0 invert" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
               Công ty TNHH Nguồn Nhân Lực Success — thành viên của tập đoàn HR hàng đầu Trung Quốc, với sứ mệnh mang đến giải pháp nhân lực toàn diện cho doanh nghiệp tại Việt Nam.

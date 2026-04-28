@@ -24,16 +24,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">S</span>
-            </div>
-            <div>
-              <div className={`font-bold text-lg leading-tight ${scrolled ? 'text-navy-800' : 'text-white'}`}>
-                Success<span className="text-primary-500">HR</span>
-              </div>
-              <div className={`text-xs ${scrolled ? 'text-gray-500' : 'text-gray-200'}`}>Nguồn Nhân Lực Success</div>
-            </div>
+          <a href="#" className="flex items-center">
+            <img
+              src="/logo.png"
+              alt="SuccessHR"
+              className={`h-16 w-auto transition-all duration-300 ${scrolled ? '' : 'brightness-0 invert'}`}
+            />
           </a>
 
           {/* Desktop Nav */}
